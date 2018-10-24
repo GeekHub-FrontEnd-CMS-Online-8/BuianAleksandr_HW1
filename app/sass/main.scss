@@ -80,13 +80,13 @@ a {
 	  justify-content: space-between;
 	  align-items: center; 
   }
-  .header-nav{
+
+  .header-nav{    
     display: flex;
     color: #fff;
     li{
       margin: 0 1rem ;
-      cursor: not-allowed;
-    }
+      cursor: not-allowed;}
     li:last-child{
       margin: 0;
     }
@@ -94,7 +94,10 @@ a {
         color: #fff;}
     a:hover{  
       color: rgba(255, 255, 255, 0.432);}
-  } 
+      @media (max-width: 768px) {
+          display: none;}   
+  }
+ 
   .logo{
     display: flex;
     color: #fff;
@@ -107,13 +110,29 @@ a {
       width: 60px;
       height: 60px;
     }
+    @media (max-width: 768px) {     
+      img{
+      width: 40px;
+      height: 40px;
+    }
+    h1{
+      font-weight: normal;
+      margin-left: 1rem; 
+      font-size: 1rem;
+      font-family: 'Pacifico', cursive;
+    }
   }
+}
+
   .wraper{
 	  max-width: 980px;
 	  margin: 0 auto;
   }
   .colapce-menu{
-	  display: none;
+    display: none;
+    font-size: 1.5rem;
+    @media (max-width: 768px) {     
+          display: block }
   }
   .wellcome{
 	  background-image: url(./../img/koffiebonen-gebrand-en.jpg);
@@ -136,21 +155,19 @@ a {
 	transform: translate(-50%, -50%);
   }
   .coffee-sort-item{
-    display: flex; 
-    height:350px;
+    display: flex;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-radius: 2px;
-    padding-right: 1rem;
-    .img-priv{
-      min-width: 300px;
-      height:300px;
-      margin-right: 2rem;
-      border-radius: 2px;
-      img{
-        max-width: 100%;
-        height: auto;
-      }
+    
+    img{
+      max-width: 300px;    
+      height: auto;
+      max-height: 200px;
+    
+    }
+    .sopt-description{
+      margin-left: 2rem;
     }
     h2{
       font-size: 2rem;
@@ -163,12 +180,26 @@ a {
       margin-bottom: 2rem;
       overflow: hidden;
       height: 220px;
-
+    }
+    @media (max-width: 768px) {     
+          flex-direction: column; 
+          img{
+            width: 100%;
+            height: auto;
+            margin: 0;
+          }
+          .sopt-description{
+            margin: 0;
+          }
     }
   }
-  .coffee-sort-item:nth-child(2n){
+  .coffee-sort li:nth-child(2n){
+    .coffee-sort-item{
       background-color: #331a000c;
+      margin-bottom: 1rem;
   }
+    }
+      
   .coffee-sort-item:nth-child(2n+1){
       margin-bottom: 0;
   }
@@ -191,14 +222,22 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
+    @media (max-width: 768px) {     
+        flex-direction: column;
+    }
     
   }
   .grid-item{
     width: 33%;
-    height: 210px;
+    margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {     
+        width: 100%;
+    }
   }
   .logo-bottom{
     display: flex;
+    justify-content: center;
     align-items: center;
     img{
       width: 40px;
@@ -265,8 +304,7 @@ a {
     p{
       text-align: left;
     }
-  }
-  article{
+       article{
     overflow: hidden;
     p{
       margin: 1rem 0;
@@ -281,3 +319,5 @@ a {
       float: right;
     }
   }
+
+}

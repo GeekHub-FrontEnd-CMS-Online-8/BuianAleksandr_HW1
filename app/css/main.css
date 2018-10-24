@@ -103,6 +103,9 @@ button:hover {
     color: #fff; }
   .header-nav a:hover {
     color: rgba(255, 255, 255, 0.432); }
+  @media (max-width: 768px) {
+    .header-nav {
+      display: none; } }
 
 .logo {
   display: -webkit-box;
@@ -118,13 +121,26 @@ button:hover {
   .logo img {
     width: 60px;
     height: 60px; }
+  @media (max-width: 768px) {
+    .logo img {
+      width: 40px;
+      height: 40px; }
+    .logo h1 {
+      font-weight: normal;
+      margin-left: 1rem;
+      font-size: 1rem;
+      font-family: 'Pacifico', cursive; } }
 
 .wraper {
   max-width: 980px;
   margin: 0 auto; }
 
 .colapce-menu {
-  display: none; }
+  display: none;
+  font-size: 1.5rem; }
+  @media (max-width: 768px) {
+    .colapce-menu {
+      display: block; } }
 
 .wellcome {
   background-image: url(./../img/koffiebonen-gebrand-en.jpg);
@@ -154,21 +170,16 @@ button:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 350px;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   -webkit-border-radius: 2px;
-          border-radius: 2px;
-  padding-right: 1rem; }
-  .coffee-sort-item .img-priv {
-    min-width: 300px;
-    height: 300px;
-    margin-right: 2rem;
-    -webkit-border-radius: 2px;
-            border-radius: 2px; }
-    .coffee-sort-item .img-priv img {
-      max-width: 100%;
-      height: auto; }
+          border-radius: 2px; }
+  .coffee-sort-item img {
+    max-width: 300px;
+    height: auto;
+    max-height: 200px; }
+  .coffee-sort-item .sopt-description {
+    margin-left: 2rem; }
   .coffee-sort-item h2 {
     font-size: 2rem;
     line-height: 3rem;
@@ -178,9 +189,23 @@ button:hover {
     margin-bottom: 2rem;
     overflow: hidden;
     height: 220px; }
+  @media (max-width: 768px) {
+    .coffee-sort-item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .coffee-sort-item img {
+        width: 100%;
+        height: auto;
+        margin: 0; }
+      .coffee-sort-item .sopt-description {
+        margin: 0; } }
 
-.coffee-sort-item:nth-child(2n) {
-  background-color: #331a000c; }
+.coffee-sort li:nth-child(2n) .coffee-sort-item {
+  background-color: #331a000c;
+  margin-bottom: 1rem; }
 
 .coffee-sort-item:nth-child(2n+1) {
   margin-bottom: 0; }
@@ -207,16 +232,30 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 0; }
+  @media (max-width: 768px) {
+    .grid-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .grid-item {
   width: 33%;
-  height: 210px; }
+  margin-bottom: 1.5rem; }
+  @media (max-width: 768px) {
+    .grid-item {
+      width: 100%; } }
 
 .logo-bottom {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -287,14 +326,13 @@ footer {
     line-height: 4rem; }
   .about p {
     text-align: left; }
-
-article {
-  overflow: hidden; }
-  article p {
-    margin: 1rem 0;
-    line-height: 1.5rem; }
-  article img {
-    float: left;
-    margin: 1rem 1rem 1rem 0; }
-  article .img-right {
-    float: right; }
+  .about article {
+    overflow: hidden; }
+    .about article p {
+      margin: 1rem 0;
+      line-height: 1.5rem; }
+    .about article img {
+      float: left;
+      margin: 1rem 1rem 1rem 0; }
+    .about article .img-right {
+      float: right; }
