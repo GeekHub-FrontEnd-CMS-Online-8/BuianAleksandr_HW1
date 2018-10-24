@@ -49,27 +49,27 @@ a {
   text-decoration: none; }
   ////// end reset//////
 
-  body{
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-  }
-  h1, h2, h3{
-    font-family: 'Source Serif Pro', serif;
-  }
-  button{
-    font-weight: 700;
-    padding: .375rem .75rem;
-    color: #fff;
-    background-color: #331a00;
-    word-spacing: 2px;
-    line-height: 1.5;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    cursor: not-allowed;
-  }
-  button:hover{
-    background-color: #331a0065;
-  }
+body{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3{
+  font-family: 'Source Serif Pro', serif;
+}
+button{
+  font-weight: 700;
+  padding: .375rem .75rem;
+  color: #fff;
+  background-color: #331a00;
+  word-spacing: 2px;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  cursor: not-allowed;
+}
+button:hover{
+  background-color: #331a0065;
+}
 
   .header-page{
 	  background-color: #331a00;	  
@@ -110,7 +110,8 @@ a {
       width: 60px;
       height: 60px;
     }
-    @media (max-width: 768px) {     
+    @media (max-width: 768px) {
+      margin-left: 1rem;     
       img{
       width: 40px;
       height: 40px;
@@ -312,12 +313,12 @@ a {
     }
     
     img{
-    float:left; 
-    margin: 1rem 1rem 1rem 0; 
+      float:left; 
+      margin: 1rem 1rem 1rem 0; 
     }
     .img-right{
       float: right;
+      margin: 1rem 0rem 1rem 1REM;
     }
   }
-
 }
