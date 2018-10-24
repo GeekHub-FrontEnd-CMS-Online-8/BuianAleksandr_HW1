@@ -1,0 +1,39 @@
+{
+  "name": "buianalex_hw_01",
+  "version": "1.0.0",
+  "description": "Home work for GeetHub",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeekHub-FrontEnd-CMS-Online-8/BuianAleksandr_HW1.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "dependencies": {
+    "gulp-rigger": "^0.5.8",
+    "minimatch": "^3.0.4",
+    "validator": "^10.8.0"
+  },
+  "author": "Alex_bu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeekHub-FrontEnd-CMS-Online-8/BuianAleksandr_HW1/issues"
+  },
+  "homepage": "https://github.com/GeekHub-FrontEnd-CMS-Online-8/BuianAleksandr_HW1#readme"
+}
