@@ -97,8 +97,6 @@ a {
     a:hover{  
       color: rgba(255, 255, 255, 0.432);}
   } 
-      
-
   .logo{
     display: flex;
     color: #fff;
@@ -215,7 +213,6 @@ a {
       font-family: 'Pacifico', cursive;
     }
   }
-
   .google-map{
     width: 100%;
       height: auto;
@@ -223,14 +220,12 @@ a {
   }
   .comany-info{
     color: #fff;
-    text-align: center;
-   
+    text-align: center;  
   }
   .contacts{
     li{
       padding-top: 2rem;
-      position: relative;
-      
+      position: relative;     
     }
     li::before{
       font-weight: bold;
@@ -257,10 +252,32 @@ a {
       font-size: 2rem;     
     }
   }
-
   .copyright{
     text-align: center;
     font-size: 0.8rem;
     line-height: 2rem;
     color: #fff;
+  }
+  .about{
+    text-align: center;
+    h1{
+      line-height: 4rem;
+    }
+    p{
+      text-align: left;
+    }
+  }
+  article{
+    overflow: hidden;
+    p{
+      margin: 1rem 0;
+    }
+    
+    img{
+    float:left; /* Выравнивание по левому краю */
+    margin: 1rem 1rem 1rem 0; 
+    }
+    .img-right{
+      float: right;
+    }
   }
