@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a:hover, a:active {
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+  ////// end reset//////
+
+  body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1, h2, h3{
+    font-family: 'Source Serif Pro', serif;
+  }
+  button{
+    font-weight: 700;
+    padding: .375rem .75rem;
+    color: #fff;
+    background-color: #331a00;
+    word-spacing: 2px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    cursor: not-allowed;
+  }
+  button:hover{
+    background-color: #331a0065;
+  }
+
+  .header-page{
+	  background-color: #331a00;	  
+  }
+  .header-top{
+	  padding: 10px 0;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  
+  }
+  .header-nav{
+    display: flex;
+    color: #fff;
+    li{
+      margin: 0 1rem ;
+      cursor: not-allowed;
+    }
+    li:last-child{
+      margin: 0;
+    }
+
+    a{
+        color: #fff;}
+    a:hover{  
+      color: rgba(255, 255, 255, 0.432);}
+  } 
+      
+
+  .logo{
+    display: flex;
+    color: #fff;
+    h1{
+      font-weight: normal;
+      font-family: 'Pacifico', cursive;
+      margin: 1rem;
+      font-size: 1.5rem;}
+    img{
+      width: 60px;
+    height: 60px;
+    }
+  }
+  .wraper{
+	  width: 980px;
+	  margin: 0 auto;
+  }
+  .colapce-menu{
+	  display: none;
+  }
+  .wellcome{
+	  background-image: url(./../img/koffiebonen-gebrand-en.jpg);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  width: 100%;
+	  height: 500px;
+    position: relative;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+  }
+  .wellcome-text{
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  .coffee-sort-item{
+    display: flex; 
+    height:350px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    padding-right: 1rem;
+    .img-priv{
+      min-width: 300px;
+      height:300px;
+      margin-right: 2rem;
+      border-radius: 2px;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    h2{
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #331a00;
+      
+    }
+    p{
+      line-height: 1.5rem;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      height: 220px;
+
+    }
+  }
+  .coffee-sort-item:nth-child(2n){
+      background-color: #331a000c;
+  }
+  .coffee-sort-item:nth-child(2n+1){
+      margin-bottom: 0;
+  }
+
+  .coffee-sort-item:last-child{
+    border: none;
+  }
+  footer {
+    padding: 1rem 0 0 ;
+    background-color: #331a00;
+    a{
+      color: #fff;
+      cursor: not-allowed;
+    }
+     a:hover{
+      color: rgba(255, 255, 255, 0.432);
+    }
+  }
+  .grid-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+  }
+  .grid-item{
+    width: 33%;
+    height: 210px;
+
+  }
+  .logo-bottom{
+    display: flex;
+    align-items: center;
+    img{
+      width: 40px;
+      height: 40px;
+    }
+    h1{
+      font-weight: normal;
+      margin-left: 1rem; 
+      font-size: 1rem;
+      font-family: 'Pacifico', cursive;
+    }
+  }
+
+  .google-map{
+    width: 100%;
+      height: auto;
+      cursor: not-allowed;
+  }
+  .comany-info{
+    color: #fff;
+    text-align: center;
+   
+  }
+  .contacts{
+    li{
+      padding-top: 2rem;
+      position: relative;
+      
+    }
+    li::before{
+      font-weight: bold;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0.5rem;
+    }
+    li:nth-child(1)::before{    
+      content: 'Address:'
+    }
+    li:nth-child(2)::before{
+      content: 'Telephone:'
+    }
+    li:nth-child(3)::before{
+      content: 'Email:'
+    } 
+  }
+  .social-link{
+    display: flex;
+    justify-content: center;
+    li{
+      margin: 1rem;
+      font-size: 2rem;     
+    }
+  }
+
+  .copyright{
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #fff;
+  }
