@@ -48,28 +48,6 @@ table {
 a {
   text-decoration: none; }
 
-body {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif; }
-
-h1, h2, h3 {
-  font-family: 'Source Serif Pro', serif; }
-
-button {
-  font-weight: 700;
-  padding: .375rem .75rem;
-  color: #fff;
-  background-color: #331a00;
-  word-spacing: 2px;
-  line-height: 1.5;
-  border: 1px solid transparent;
-  -webkit-border-radius: .25rem;
-          border-radius: .25rem;
-  cursor: not-allowed; }
-
-button:hover {
-  background-color: #331a0065; }
-
 .header-page {
   background-color: #331a00; }
 
@@ -107,6 +85,13 @@ button:hover {
     .header-nav {
       display: none; } }
 
+.colapce-menu {
+  display: none;
+  font-size: 1.5rem; }
+  @media (max-width: 768px) {
+    .colapce-menu {
+      display: block; } }
+
 .logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -132,17 +117,6 @@ button:hover {
         margin-left: 1rem;
         font-size: 1rem;
         font-family: 'Pacifico', cursive; } }
-
-.wraper {
-  max-width: 980px;
-  margin: 0 auto; }
-
-.colapce-menu {
-  display: none;
-  font-size: 1.5rem; }
-  @media (max-width: 768px) {
-    .colapce-menu {
-      display: block; } }
 
 .wellcome {
   background-image: url(./../img/koffiebonen-gebrand-en.jpg);
@@ -214,6 +188,25 @@ button:hover {
 
 .coffee-sort-item:last-child {
   border: none; }
+
+.about {
+  text-align: center; }
+  .about h1 {
+    font-size: 2rem;
+    line-height: 4rem; }
+  .about p {
+    text-align: left; }
+  .about article {
+    overflow: hidden; }
+    .about article p {
+      margin: 1rem 0;
+      line-height: 1.5rem; }
+    .about article img {
+      float: left;
+      margin: 1rem 1rem 1rem 0; }
+    .about article .img-right {
+      float: right;
+      margin: 1rem 0rem 1rem 1REM; }
 
 footer {
   padding: 1rem 0 0;
@@ -321,21 +314,72 @@ footer {
   line-height: 2rem;
   color: #fff; }
 
-.about {
-  text-align: center; }
-  .about h1 {
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Source Serif Pro', serif; }
+
+button {
+  font-weight: 700;
+  padding: .375rem .75rem;
+  color: #fff;
+  background-color: #331a00;
+  word-spacing: 2px;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  -webkit-border-radius: .25rem;
+          border-radius: .25rem;
+  cursor: not-allowed; }
+
+button:hover {
+  background-color: #331a0065; }
+
+.coffee-sort-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+  .coffee-sort-item img {
+    max-width: 300px;
+    height: auto;
+    max-height: 200px; }
+  .coffee-sort-item .sopt-description {
+    margin-left: 2rem; }
+  .coffee-sort-item h2 {
     font-size: 2rem;
-    line-height: 4rem; }
-  .about p {
-    text-align: left; }
-  .about article {
-    overflow: hidden; }
-    .about article p {
-      margin: 1rem 0;
-      line-height: 1.5rem; }
-    .about article img {
-      float: left;
-      margin: 1rem 1rem 1rem 0; }
-    .about article .img-right {
-      float: right;
-      margin: 1rem 0rem 1rem 1REM; }
+    line-height: 3rem;
+    color: #331a00; }
+  .coffee-sort-item p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    height: 220px; }
+  @media (max-width: 768px) {
+    .coffee-sort-item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .coffee-sort-item img {
+        width: 100%;
+        height: auto;
+        margin: 0; }
+      .coffee-sort-item .sopt-description {
+        margin: 0; } }
+
+.coffee-sort li:nth-child(2n) .coffee-sort-item {
+  background-color: #331a000c;
+  margin-bottom: 1rem; }
+
+.coffee-sort-item:nth-child(2n+1) {
+  margin-bottom: 0; }
+
+.coffee-sort-item:last-child {
+  border: none; }
