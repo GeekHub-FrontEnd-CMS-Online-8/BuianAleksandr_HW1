@@ -76,7 +76,7 @@ a {
     margin: 0 1rem;
     cursor: not-allowed; }
   .header-nav li:last-child {
-    margin: 0; }
+    margin-right: 0; }
   .header-nav a {
     color: #fff; }
   .header-nav a:hover {
@@ -104,8 +104,8 @@ a {
     margin: 1rem;
     font-size: 1.5rem; }
   .logo img {
-    width: 60px;
-    height: 60px; }
+    width: 40px;
+    height: 40px; }
   @media (max-width: 768px) {
     .logo {
       margin-left: 1rem; }
@@ -131,6 +131,7 @@ a {
   letter-spacing: 2px; }
 
 .wellcome-text {
+  max-width: 700px;
   color: #fff;
   font-size: 2rem;
   text-align: center;
@@ -140,6 +141,17 @@ a {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  .wellcome-text h2 {
+    line-height: 3.5rem; }
+  .wellcome-text button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    margin-top: 1.5rem; }
+  .wellcome-text button:hover {
+    background-color: #331a0099; }
 
 .coffee-sort-item {
   display: -webkit-box;
@@ -164,7 +176,7 @@ a {
     line-height: 1.5rem;
     margin-bottom: 2rem;
     overflow: hidden;
-    height: 220px; }
+    height: 195px; }
   @media (max-width: 768px) {
     .coffee-sort-item {
       -webkit-box-orient: vertical;
@@ -173,7 +185,8 @@ a {
           -ms-flex-direction: column;
               flex-direction: column; }
       .coffee-sort-item img {
-        max-width: 350px;
+        max-width: none;
+        max-height: none;
         width: 100%;
         height: auto;
         margin: 0; }
@@ -196,7 +209,7 @@ a {
 .about {
   text-align: center; }
   .about h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 4rem; }
   .about p {
     text-align: left; }
@@ -320,13 +333,13 @@ footer {
 
 body {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 h1, h2, h3 {
   font-family: 'Source Serif Pro', serif; }
 
 button {
-  font-weight: 700;
+  font-weight: 900;
   padding: .375rem .75rem;
   color: #fff;
   background-color: #331a00;
